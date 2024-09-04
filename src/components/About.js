@@ -1,0 +1,13 @@
+// src/components/About.js
+import React from 'react';
+
+function About({ image, about }) {
+  return (
+    <aside>
+      <img src={image || "https://via.placeholder.com/215"} alt="blog logo" />
+      {about && <p>{about}</p>}
+    </aside>
+  );
+}
+
+export default About;
